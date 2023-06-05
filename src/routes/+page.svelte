@@ -4,8 +4,8 @@
   let splitterLossSelect: string
   let attenuationSelect: string
   let addionalLossInput: string = "1"
-  let lossPerConnectorInput: string = "0.30"
-  let connectorCountInput: string = "7"
+  let lossPerConnectorInput: string = "0.05"
+  let connectorCountInput: string = "1"
   let splicesPerKm: number = 1
   let spliceLoss: number = 0.05
   $: splitterLoss = Number(insertionLossSelect) + Number(splitterLossSelect)
@@ -22,7 +22,6 @@
         <span>XGS-PON Optic</span>
         <select bind:value={linkBudgetSelect} class="select">
           <option value="32.00">Tibit N2</option>
-          <option value="31.00">Generic XGS-PON N2</option>
         </select>
       </label>
       <label class="label pt-3">
